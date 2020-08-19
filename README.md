@@ -2,7 +2,7 @@
   padding: 1rem 0;
 ">
 <p align="center">
-  <img width="100" height="100" src="./public/static/images/icons/about-me.svg" />
+  <img width="300" height="300" src="./public/static/images/icons/about-me.svg" />
 </p>
 
 # About Me
