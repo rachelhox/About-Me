@@ -2,26 +2,13 @@
   padding: 0;
   margin: 0;
 }
-/* 
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .navbar {
-    display: none;
-  }
-
-  .hambuger {
-    top: 0;
-    float: right;
-    border: 1px solid black;
-  }
-}
-
-@media (min-width: 1200px) { */
 
 .container {
   justify-items: center;
   align-content: center;
   align-items: center;
   justify-content: center;
+  color: rgba(0, 0, 0, 0.8);
 }
 .desktop-wrapper {
   width: 100%;
@@ -32,16 +19,33 @@
 }
 
 .navbar {
-  color: rgb(213, 182, 182);
-  background-color: rgb(123, 71, 153);
-  top: 0;
   height: 5rem;
+  background-color: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 1);
+  z-index: 100;
+  transition: background-color 1s ease 0s;
   display: flex;
   flex-direction: row;
   justify-items: center;
   align-content: center;
   align-items: center;
   justify-content: space-between;
+}
+
+.navbar > .container > img {
+  width: 105px;
+  height: 76px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
 }
 
 nav > ul {
@@ -68,6 +72,7 @@ li {
   background-repeat: no-repeat;
   background-position: 87% 13%;
   min-height: 70vh;
+  margin-top: -5rem;
 }
 
 .hero-section > .container {
@@ -87,29 +92,93 @@ li {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.btn:hover {
+.btn-outline-light:hover {
   color: rgba(184, 112, 231, 0.8);
 }
 
 .first-section {
   min-height: 25rem;
+  height: 30rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-items: center;
+  width: 100%;
+  /* background-image: linear-gradient(
+      0deg,
+      rgba(123, 135, 185, 0.33),
+      rgba(123, 135, 185, 0.33)
+    ),
+    url(./public/static/images/assets/fca-sv-tour.png);
+  background-repeat: no-repeat;
+  background-position: 40% bottom;
+  background-size: cover;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; */
 }
+
 .first-left-section {
   display: flex;
   flex-direction: column;
-  padding: 5rem;
+  padding: 2rem;
+}
+
+.first-left-section > h1 {
+  margin-bottom: 2rem;
 }
 
 .first-right-section {
   display: flex;
   flex-direction: column;
+  padding: 2rem;
+  /* height: 40rem; */
 }
 
 .first-right-section > img {
-  height: 30rem;
-  width: 45rem;
+  height: 20rem;
+  width: 30rem;
+}
+
+.first-right-section > .caption {
+  padding: 1rem;
+  display: block;
+  margin: 2rem;
+  z-index: 1;
+  margin: -3rem 1rem 0;
+  background: white;
+  border-radius: 0.3rem;
+  -webkit-filter: drop-shadow(1rem 1rem 1rem rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0rem 0rem 0.5rem rgba(0, 0, 0, 0.2));
+  transition: 0.3s ease;
+}
+
+.first-right-section > .caption:hover {
+  cursor: pointer;
+  z-index: 2;
+  margin: 0;
+  border-radius: 0rem;
+  border-bottom: 5px solid purple;
+  -webkit-filter: none;
+  filter: none;
+  box-shadow: 0px 8px 13px 3px rgba(214, 214, 214, 0.45);
+}
+
+.navbar > .solid {
+  background-color: #490d40;
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 0 4px grey;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    display: none;
+  }
+
+  /* .hambuger {
+    top: 0;
+    float: right;
+    border: 1px solid black;
+  } */
 }

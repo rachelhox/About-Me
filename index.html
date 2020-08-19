@@ -2,7 +2,6 @@
 <html>
   <head>
     <title>About Me</title>
-    <link href="./styles.css" rel="stylesheet" />
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -14,12 +13,13 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <link href="./styles.css" rel="stylesheet" />
   </head>
   <body>
     <div class="destop-wrapper">
-      <div class="navbar">
+      <div class="navbar" id="navbar">
         <div class="container">
-          <h1>About Me</h1>
+          <img src="public/static/images/assets/about-me.svg" />
           <nav>
             <ul>
               <a href="https://www.linkedin.com/in/rachel-ho-1016/">
@@ -35,15 +35,20 @@
           </nav>
         </div>
       </div>
-      
-    <div class="hero-section">
+
+      <div class="hero-section">
         <div class="container">
-          <h1>About Me</h1>
-          <a href="https://www.linkedin.com/in/rachel-ho-1016/"><button type="button" class="btn btn-outline-light">Learn More</button></a>
+          <h1>Rachel Ho</h1>
+          <a href="https://www.linkedin.com/in/rachel-ho-1016/"
+            ><button type="button" class="btn btn-outline-light">
+              Learn More
+            </button></a
+          >
         </div>
-    </div>
-    <div class="first-section">
-        <div class="first-left-section">
+      </div>
+      <div class="container">
+        <div class="first-section">
+          <div class="first-left-section">
             <h1>Before Bootcamp</h1>
             <p>
               I was working as a STEM/Coding instructor at a Hong-Kong based
@@ -52,7 +57,7 @@
               empower me to do.
             </p>
             <p>
-              I worked on the Launchpad program and went to Silicone Valley as a
+              I worked on the Launchpad program and went to Silicon Valley as a
               teaching assitant for their program; it was an eye-opening
               experiene and I got to see first-hand the life in the Bay Area,
               aka the techlogy hub of the world.
@@ -70,6 +75,7 @@
         </div>
       </div>
     </div>
+
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -85,5 +91,6 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+    <script src="./index.js"></script>
   </body>
 </html>
