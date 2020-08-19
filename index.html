@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Document Title</title>
-    <link href="./styles.css" rel="stylesheet" />
+    <title>About Me</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -14,40 +13,84 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <link href="./styles.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="container-fluid">
-      <div class="navbar">
-        <h1>About Me</h1>
-        <nav>
-          <ul>
-            <a href="https://www.linkedin.com/in/rachel-ho-1016/">
-              <li>Resume</li>
-            </a>
-            <a href="https://github.com/rachelhox">
-              <li>Portfolio</li>
-            </a>
-            <a href="./contact.html">
-              <li>Contact</li>
-            </a>
-          </ul>
-        </nav>
+    <div class="destop-wrapper">
+      <div class="navbar" id="navbar">
+        <div class="container">
+          <img src="public/static/images/assets/about-me.svg" />
+          <nav>
+            <ul>
+              <a href="https://www.linkedin.com/in/rachel-ho-1016/">
+                <li>Resume</li>
+              </a>
+              <a href="https://github.com/rachelhox">
+                <li>Portfolio</li>
+              </a>
+              <a href="./contact.html">
+                <li>Contact</li>
+              </a>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <script
-        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"
-      ></script>
-      <script
-        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"
-      ></script>
-      <script
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"
-      ></script>
+
+      <div class="hero-section">
+        <div class="container">
+          <h1>Rachel Ho</h1>
+          <a href="https://www.linkedin.com/in/rachel-ho-1016/"
+            ><button type="button" class="btn btn-outline-light">
+              Learn More
+            </button></a
+          >
+        </div>
+      </div>
+      <div class="container">
+        <div class="first-section">
+          <div class="first-left-section">
+            <h1>Before Bootcamp</h1>
+            <p>
+              I was working as a STEM/Coding instructor at a Hong-Kong based
+              company called First Code Academy; slowly, I became interested in
+              coding and all the seemingly limitless possibilities that it'd
+              empower me to do.
+            </p>
+            <p>
+              I worked on the Launchpad program and went to Silicon Valley as a
+              teaching assitant for their program; it was an eye-opening
+              experiene and I got to see first-hand the life in the Bay Area,
+              aka the techlogy hub of the world.
+            </p>
+          </div>
+          <div class="first-right-section">
+            <img src="./public/static/images/assets/fca-sv-tour.png" />
+            <div class="caption">
+              <p>
+                Our happy, albeit some unprepared faces caught on camera at
+                Google campus!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
   </body>
 </html>
