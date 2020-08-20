@@ -181,6 +181,10 @@ li {
   padding: 1.5rem;
 }
 
+.second-section-header {
+  padding-left: 1rem;
+}
+
 .row {
   align-items: center;
   /* align the children within the flexbox to align horizontally */
