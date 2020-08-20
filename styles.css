@@ -258,8 +258,13 @@ li {
 
 .third-section {
   min-height: 25rem;
-  height: 45rem;
+  height: 36rem;
   padding: 1.1rem;
+}
+
+.third-section-header {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
 }
 
 .carousel-inner {
