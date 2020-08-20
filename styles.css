@@ -177,12 +177,13 @@ li {
 
 .second-section {
   min-height: 25rem;
-  height: 30rem;
-  padding: 1.5rem;
+  height: 55rem;
+  padding: 1.1rem;
 }
 
 .second-section-header {
   padding-left: 1rem;
+  padding-bottom: 1rem;
 }
 
 .row {
@@ -191,7 +192,7 @@ li {
 }
 .second-section-content > .container > .row > .col > img {
   height: 370px;
-  width: 516px;
+  width: 522px;
 }
 
 .card-body > .card-subtitle {
@@ -253,6 +254,12 @@ li {
 .card-body > .btn-dark {
   border: none;
   border-color: none;
+}
+
+.third-section {
+  min-height: 25rem;
+  height: 45rem;
+  padding: 1.1rem;
 }
 
 @media only screen and (max-width: 600px) {
