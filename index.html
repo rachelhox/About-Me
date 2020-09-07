@@ -17,24 +17,37 @@
   </head>
   <body>
     <div class="destop-wrapper">
-      <div class="navbar" id="navbar">
+      <nav class="navbar navbar-expand-lg" id="navbar">
         <div class="container">
-          <img src="public/static/images/assets/about-me.svg" />
-          <nav>
-            <ul>
+          <a class="navbar-brand" href="#">
+            <img src="public/static/images/assets/about-me.svg" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
               <a href="https://www.linkedin.com/in/rachel-ho-1016/">
-                <li>Resume</li>
+                <li class="nav-item">Resume</li>
               </a>
               <a href="https://github.com/rachelhox">
-                <li>Portfolio</li>
+                <li class="nav-item">Portfolio</li>
               </a>
               <a href="./contact.html">
-                <li>Contact</li>
+                <li class="nav-item">Contact</li>
               </a>
             </ul>
-          </nav>
+          </div>
         </div>
-      </div>
+      </nav>
 
       <div class="hero-section">
         <div class="container">
@@ -90,9 +103,7 @@
                 </div>
                 <div class="col">
                   <div class="card-body" id="card-body2">
-                    <h5>
-                      Automatic Speech Recognition System
-                    </h5>
+                    <h5>Automatic Speech Recognition System</h5>
                     <h6 class="card-subtitle">
                       <img
                         src="./public/static/images/icons/Python-logo.svg"
@@ -116,17 +127,13 @@
               <div class="row" id="row2">
                 <div class="col">
                   <div class="card-body">
-                    <h5>
-                      Pong
-                    </h5>
+                    <h5>Pong</h5>
                     <h6 class="card-subtitle">
                       <img
                         src="./public/static/images/icons/javascript.svg"
                       />Javascript
                     </h6>
-                    <p class="card-text">
-                      Retro Pong Game: play against AI
-                    </p>
+                    <p class="card-text">Retro Pong Game: play against AI</p>
                     <a
                       href="https://github.com/rachelhox/Pong"
                       class="btn btn-dark"
@@ -186,9 +193,7 @@
                   </div>
                   <div class="carousel-caption d-none d-md-block">
                     <h5>Thanksgiving Morning</h5>
-                    <p>
-                      chilling with my lovely dog
-                    </p>
+                    <p>chilling with my lovely dog</p>
                   </div>
                 </div>
                 <div class="carousel-item">
@@ -204,9 +209,7 @@
                   </div>
                   <div class="carousel-caption d-none d-md-block" id="caption2">
                     <h5>Photo Booth</h5>
-                    <p>
-                      90's themed dance party
-                    </p>
+                    <p>90's themed dance party</p>
                   </div>
                 </div>
                 <div class="carousel-item">
@@ -222,9 +225,7 @@
                   </div>
                   <div class="carousel-caption d-none d-md-block" id="caption3">
                     <h5>Christmas Tree Shopping</h5>
-                    <p>
-                      preparing for Christmas
-                    </p>
+                    <p>preparing for Christmas</p>
                   </div>
                 </div>
               </div>

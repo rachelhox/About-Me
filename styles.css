@@ -38,7 +38,7 @@ a:hover {
   text-decoration: none;
 }
 
-.navbar > .container > img {
+.navbar-brand > img {
   width: 105px;
   height: 76px;
 }
@@ -374,13 +374,96 @@ li {
 }
 
 @media only screen and (max-width: 600px) {
-  .navbar {
-    display: none;
+  .navbar-toggler-icon {
+    background-image: url("https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff");
+  }
+  .hero-section {
+    background-size: 444%;
+    background-position: 5% 1%;
+    height: 80vh;
+  }
+  .hero-section > .container {
+    padding: 5rem;
+  }
+  .hero-section > .container > h1 {
+    margin-top: 5rem;
+    font-size: 3.5rem;
   }
 
-  /* .hambuger {
-    top: 0;
-    float: right;
-    border: 1px solid black;
-  } */
+  .container > .first-section {
+    height: 60rem;
+    flex-direction: column-reverse;
+  }
+  .first-section > .first-left-section > h1 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  .first-right-section {
+    height: 20rem;
+  }
+  .first-right-section > img {
+    height: 10rem;
+    width: 15rem;
+  }
+  .first-right-section > .caption {
+    height: 8rem;
+    z-index: 1;
+    margin: -1rem 0.5rem 0;
+  }
+
+  .second-section {
+    height: 68rem;
+  }
+
+  .second-section-header > h2 {
+    font-size: 1.5rem;
+  }
+
+  .second-section-content > .container {
+    padding: 0rem;
+  }
+
+  .second-section-content > .container > .row > .col > img {
+    height: 10rem;
+    width: 100%;
+  }
+
+  .container > .row {
+    flex-direction: column;
+  }
+  .container > #id2 {
+    flex-direction: column-reverse;
+  }
+
+  .third-section {
+    height: 30rem;
+  }
+  .third-section-header > h2 {
+    font-size: 1.5rem;
+  }
+  .carousel-inner {
+    width: 15rem;
+  }
+  .carousel-control-prev {
+    left: -15px;
+  }
+  .carousel-control-next {
+    right: -15px;
+  }
+  .footer {
+    height: 18rem;
+  }
+  .footer-left {
+    width: 15rem;
+  }
+  .footer > .container {
+    flex-direction: column;
+  }
+  .footer > .container > .footer-right {
+    justify-content: center;
+    width: 15rem;
+  }
+  .footer-right > p {
+    text-align: center;
+  }
 }
