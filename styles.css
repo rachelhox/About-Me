@@ -17,7 +17,9 @@
   align-items: center;
   justify-content: space-between;
 }
-
+.navbar-expand-lg .navbar-collapse {
+  justify-content: flex-end;
+}
 .navbar {
   height: 5rem;
   background-color: transparent;
@@ -391,7 +393,7 @@ li {
   }
 
   .container > .first-section {
-    height: 60rem;
+    height: 53rem;
     flex-direction: column-reverse;
   }
   .first-section > .first-left-section > h1 {
@@ -399,14 +401,18 @@ li {
     font-size: 1.5rem;
   }
   .first-right-section {
-    height: 20rem;
+    align-items: center;
+    padding: 0rem;
+  }
+  .first-left-section {
+    padding: 1.5rem 0.7rem;
   }
   .first-right-section > img {
-    height: 10rem;
-    width: 15rem;
+    height: 13rem;
+    width: 18rem;
   }
   .first-right-section > .caption {
-    height: 8rem;
+    height: 6rem;
     z-index: 1;
     margin: -1rem 0.5rem 0;
   }
@@ -415,8 +421,13 @@ li {
     height: 68rem;
   }
 
+  .second-section-header {
+    margin-left: -0.5rem;
+    padding: 0rem;
+  }
+
   .second-section-header > h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .second-section-content > .container {
@@ -426,6 +437,14 @@ li {
   .second-section-content > .container > .row > .col > img {
     height: 10rem;
     width: 100%;
+  }
+
+  .col {
+    padding: 0rem;
+  }
+
+  .col > .card-body {
+    padding: 1.5rem 0.5rem;
   }
 
   .container > .row {
@@ -438,6 +457,10 @@ li {
   .third-section {
     height: 30rem;
   }
+  .third-section-header {
+    margin-left: -0.5rem;
+    padding: 0rem;
+  }
   .third-section-header > h2 {
     font-size: 1.5rem;
   }
@@ -445,10 +468,10 @@ li {
     width: 15rem;
   }
   .carousel-control-prev {
-    left: -15px;
+    left: -30px;
   }
   .carousel-control-next {
-    right: -15px;
+    right: -30px;
   }
   .footer {
     height: 18rem;
