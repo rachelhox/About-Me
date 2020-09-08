@@ -379,6 +379,9 @@ li {
   .navbar-toggler-icon {
     background-image: url("https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff");
   }
+  .navbar {
+    align-content: stretch;
+  }
   .hero-section {
     background-size: 444%;
     background-position: 5% 1%;
@@ -474,17 +477,20 @@ li {
     right: -30px;
   }
   .footer {
-    height: 18rem;
+    height: 16rem;
   }
   .footer-left {
-    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .footer > .container {
     flex-direction: column;
   }
+
   .footer > .container > .footer-right {
-    justify-content: center;
-    width: 15rem;
+    width: 10rem;
+    align-items: center;
   }
   .footer-right > p {
     text-align: center;
