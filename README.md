@@ -7,6 +7,6 @@
 
 # About Me
 
-wip: About Me Page
+wip: About Me Page 🚀
 
 </div>
