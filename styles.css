@@ -11,10 +11,12 @@ body {
   /* wip: scrollspy thing */
   position: relative;
 }
-.active {
+.nav-item > .active {
   color: rgb(156, 104, 227);
   text-decoration: none;
-  z-index: 1000;
+  z-index: 100;
+  font-weight: 500;
+  transform: scale(3);
 }
 .container {
   justify-items: center;
@@ -44,7 +46,7 @@ a {
   background-color: transparent;
   border: none;
   color: rgba(255, 255, 255, 1);
-  z-index: 100;
+  z-index: 110;
   transition: background-color 1s ease 0s;
   display: flex;
   flex-direction: row;
@@ -277,13 +279,13 @@ li {
 
 .third-section {
   min-height: 25rem;
-  height: 36rem;
+  height: 50rem;
   padding: 1.1rem;
 }
 
 .third-section-header {
   padding-left: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 5rem;
 }
 
 .carousel-inner {
@@ -405,9 +407,33 @@ li {
   .navbar-toggler-icon {
     background-image: url("https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff");
   }
-  .navbar {
-    align-content: stretch;
+
+  .navbar-brand > img {
+    height: auto;
   }
+  .navbar {
+    align-content: baseline;
+    z-index: 110;
+  }
+  .navbar-collapse {
+    background-color: rgb(73, 13, 64);
+    position: absolute;
+    top: 4rem;
+    width: 100%;
+    margin: -1rem;
+  }
+  /* burger menu items take up whole viewport of the phone screen */
+  .navbar-nav {
+    height: 100vh;
+    justify-content: space-evenly;
+    background-color: rgb(73, 13, 64);
+  }
+  /* burger menu items take up whole viewport of the phone screen */
+  .navbar-nav > li {
+    padding-left: 1rem;
+    font-size: 1.5rem;
+  }
+
   .hero-section {
     background-size: 444%;
     background-position: 5% 1%;
@@ -426,8 +452,9 @@ li {
   }
 
   .container > .first-section {
-    height: 53rem;
+    height: auto;
     flex-direction: column-reverse;
+    padding-top: 2rem;
   }
   .first-section > .first-left-section > h1 {
     margin-bottom: 1rem;

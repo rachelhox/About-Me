@@ -15,12 +15,12 @@ $(document).ready(function () {
       var currLink = $(this);
       var refElement = $(currLink.attr("href"));
       if (
-        refElement.position().top <= scrollPos &&
-        refElement.position().top + refElement.height() > scrollPos
+        refElement.position().top - 300 <= scrollPos &&
+        refElement.position().top - 300 + refElement.height() > scrollPos
       ) {
         $("#navbar-scroll li a").removeClass("active");
         currLink.addClass("active");
-        console.log("scrolled");
+        console.log(refElement.position().top);
       } else {
         currLink.removeClass("active");
         console.log("scrolled1");
