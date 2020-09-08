@@ -22,4 +22,8 @@ wip: About Me Page 🚀
 
 - Very excited to move my personal page to React !!!
 
+###### \_NOTE: potential caching issues with viewing latest updates on my Github page - please see the below screenshot taken from Stackoverflow for possible solution:
+
+<img align="center" src="public/static/images/assets/chrome-caching-issue.png"/>
+
 </div>
