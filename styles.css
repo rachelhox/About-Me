@@ -3,6 +3,19 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* wip: scrollspy thing */
+  position: relative;
+}
+.active {
+  color: rgb(156, 104, 227);
+  text-decoration: none;
+  z-index: 1000;
+}
 .container {
   justify-items: center;
   align-content: center;
@@ -10,12 +23,18 @@
   justify-content: center;
   color: rgba(0, 0, 0, 0.8);
 }
+a {
+  color: white;
+}
 .desktop-wrapper {
   width: 100%;
   justify-items: center;
   align-content: center;
   align-items: center;
   justify-content: space-between;
+  /* wip: scrollspy thing */
+  height: 100%;
+  overflow-y: scroll;
 }
 .navbar-expand-lg .navbar-collapse {
   justify-content: flex-end;
@@ -35,10 +54,17 @@
   justify-content: space-between;
 }
 
-a:hover {
+.nav-item > a {
+  transition: 0.3s;
+  /* color: #fff; */
+}
+
+/* .nav-item > a:hover {
   color: none;
   text-decoration: none;
-}
+  z-index: 2;
+  transform: scale(1.5);
+} */
 
 .navbar-brand > img {
   width: 105px;
@@ -386,13 +412,17 @@ li {
     background-size: 444%;
     background-position: 5% 1%;
     height: 80vh;
+    display: flex;
+    align-content: center;
   }
   .hero-section > .container {
     padding: 5rem;
+    justify-content: space-evenly;
   }
   .hero-section > .container > h1 {
     margin-top: 5rem;
-    font-size: 3.5rem;
+    margin-bottom: 0rem;
+    font-size: 3.3rem;
   }
 
   .container > .first-section {

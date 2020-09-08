@@ -15,13 +15,14 @@
     />
     <link href="./styles.css" rel="stylesheet" />
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar-scroll" data-offset="0">
     <div class="destop-wrapper">
       <nav class="navbar navbar-expand-lg" id="navbar">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="public/static/images/assets/about-me.svg" />
           </a>
+          <!-- First version of my burger icon where I used a background image for the hambuger icon:  -->
           <!-- <button
             class="navbar-toggler"
             type="button"
@@ -47,16 +48,14 @@
             <span class="icon-bar bottom-bar"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <a href="https://www.linkedin.com/in/rachel-ho-1016/">
-                <li class="nav-item">Resume</li>
-              </a>
-              <a href="https://github.com/rachelhox">
-                <li class="nav-item">Portfolio</li>
-              </a>
-              <a href="./contact.html">
-                <li class="nav-item">Contact</li>
-              </a>
+            <ul class="navbar-nav" id="navbar-scroll">
+              <li class="nav-item">
+                <a href="#first-section">Resume</a>
+              </li>
+
+              <li class="nav-item"><a href="#second-section">Portfolio</a></li>
+
+              <li class="nav-item"><a href="#third-section">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -73,7 +72,7 @@
         </div>
       </div>
       <div class="container">
-        <div class="first-section">
+        <div class="first-section" id="first-section">
           <div class="first-left-section">
             <h1>Before Bootcamp</h1>
             <p>
@@ -102,7 +101,7 @@
       </div>
 
       <div class="container">
-        <div class="second-section">
+        <div class="second-section" id="second-section">
           <div class="second-section-header">
             <h2>Some of my personal projects before the bootcamp...</h2>
           </div>
@@ -166,7 +165,7 @@
       </div>
 
       <div class="container">
-        <div class="third-section">
+        <div class="third-section" id="third-section">
           <div class="third-section-header">
             <h2>Some photos of me having fun..</h2>
           </div>

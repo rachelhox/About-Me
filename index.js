@@ -9,6 +9,25 @@ $(document).ready(function () {
     }
   });
 
+  $(window).scroll(function () {
+    var scrollPos = $(document).scrollTop();
+    $("#navbar-scroll .nav-item a").each(function () {
+      var currLink = $(this);
+      var refElement = $(currLink.attr("href"));
+      if (
+        refElement.position().top <= scrollPos &&
+        refElement.position().top + refElement.height() > scrollPos
+      ) {
+        $("#navbar-scroll li a").removeClass("active");
+        currLink.addClass("active");
+        console.log("scrolled");
+      } else {
+        currLink.removeClass("active");
+        console.log("scrolled1");
+      }
+    });
+  });
+
   //Sticky Navbar
   // When the user scrolls the page, execute myFunction
   window.onscroll = function () {
