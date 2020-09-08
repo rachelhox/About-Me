@@ -24,6 +24,6 @@ wip: About Me Page 🚀
 
 ###### \_NOTE: potential caching issues with viewing latest updates on my Github page - please see the below screenshot taken from Stackoverflow for possible solution:
 
-<img width="550" align="center" src="public/static/images/assets/chrome-caching-issue.png"/>
+<img width="600" align="center" src="public/static/images/assets/chrome-caching-issue.png"/>
 
 </div>
