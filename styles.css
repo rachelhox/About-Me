@@ -3,6 +3,21 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* wip: scrollspy thing */
+  position: relative;
+}
+.nav-item > .active {
+  color: rgb(156, 104, 227);
+  text-decoration: none;
+  z-index: 100;
+  font-weight: 700;
+  transform: scaleX(2);
+}
 .container {
   justify-items: center;
   align-content: center;
@@ -10,20 +25,28 @@
   justify-content: center;
   color: rgba(0, 0, 0, 0.8);
 }
+a {
+  color: white;
+}
 .desktop-wrapper {
   width: 100%;
   justify-items: center;
   align-content: center;
   align-items: center;
   justify-content: space-between;
+  /* wip: scrollspy thing */
+  height: 100%;
+  overflow-y: scroll;
 }
-
+.navbar-expand-lg .navbar-collapse {
+  justify-content: flex-end;
+}
 .navbar {
   height: 5rem;
   background-color: transparent;
   border: none;
   color: rgba(255, 255, 255, 1);
-  z-index: 100;
+  z-index: 110;
   transition: background-color 1s ease 0s;
   display: flex;
   flex-direction: row;
@@ -33,12 +56,19 @@
   justify-content: space-between;
 }
 
-a:hover {
-  color: none;
-  text-decoration: none;
+.nav-item > a {
+  transition: 0.3s;
+  /* color: #fff; */
 }
 
-.navbar > .container > img {
+/* .nav-item > a:hover {
+  color: none;
+  text-decoration: none;
+  z-index: 2;
+  transform: scale(1.5);
+} */
+
+.navbar-brand > img {
   width: 105px;
   height: 76px;
 }
@@ -249,13 +279,13 @@ li {
 
 .third-section {
   min-height: 25rem;
-  height: 36rem;
+  height: 50rem;
   padding: 1.1rem;
 }
 
 .third-section-header {
   padding-left: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 5rem;
 }
 
 .carousel-inner {
@@ -374,13 +404,194 @@ li {
 }
 
 @media only screen and (max-width: 600px) {
-  .navbar {
-    display: none;
+  .navbar-toggler-icon {
+    background-image: url("https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff");
   }
 
-  /* .hambuger {
-    top: 0;
-    float: right;
-    border: 1px solid black;
-  } */
+  .navbar-brand > img {
+    height: auto;
+  }
+  .navbar {
+    align-content: baseline;
+    z-index: 110;
+  }
+  .navbar-collapse {
+    background-color: rgb(73, 13, 64);
+    position: absolute;
+    top: 4rem;
+    width: 100%;
+    margin: -1rem;
+  }
+  /* burger menu items take up whole viewport of the phone screen */
+  .navbar-nav {
+    height: 100vh;
+    justify-content: space-evenly;
+    background-color: rgb(73, 13, 64);
+  }
+  /* burger menu items take up whole viewport of the phone screen */
+  .navbar-nav > li {
+    padding-left: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .hero-section {
+    background-size: 444%;
+    background-position: 5% 1%;
+    height: 80vh;
+    display: flex;
+    align-content: center;
+  }
+  .hero-section > .container {
+    padding: 5rem;
+    justify-content: space-evenly;
+  }
+  .hero-section > .container > h1 {
+    margin-top: 5rem;
+    margin-bottom: 0rem;
+    font-size: 3.3rem;
+  }
+
+  .container > .first-section {
+    height: auto;
+    flex-direction: column-reverse;
+    padding-top: 2rem;
+  }
+  .first-section > .first-left-section > h1 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  .first-right-section {
+    align-items: center;
+    padding: 0rem;
+  }
+  .first-left-section {
+    padding: 1.5rem 0.7rem;
+  }
+  .first-right-section > img {
+    height: 13rem;
+    width: 18rem;
+  }
+  .first-right-section > .caption {
+    height: 6rem;
+    z-index: 1;
+    margin: -1rem 0.5rem 0;
+  }
+
+  .second-section {
+    height: 68rem;
+  }
+
+  .second-section-header {
+    margin-left: -0.5rem;
+    padding: 0rem;
+  }
+
+  .second-section-header > h2 {
+    font-size: 1.4rem;
+  }
+
+  .second-section-content > .container {
+    padding: 0rem;
+  }
+
+  .second-section-content > .container > .row > .col > img {
+    height: 10rem;
+    width: 100%;
+  }
+
+  .col {
+    padding: 0rem;
+  }
+
+  .col > .card-body {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .container > .row {
+    flex-direction: column;
+  }
+  .container > #id2 {
+    flex-direction: column-reverse;
+  }
+
+  .third-section {
+    height: 30rem;
+  }
+  .third-section-header {
+    margin-left: -0.5rem;
+    padding: 0rem;
+  }
+  .third-section-header > h2 {
+    font-size: 1.5rem;
+  }
+  .carousel-inner {
+    width: 15rem;
+  }
+  .carousel-control-prev {
+    left: -30px;
+  }
+  .carousel-control-next {
+    right: -30px;
+  }
+  .footer {
+    height: 16rem;
+  }
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer > .container {
+    flex-direction: column;
+  }
+
+  .footer > .container > .footer-right {
+    width: 10rem;
+    align-items: center;
+  }
+  .footer-right > p {
+    text-align: center;
+  }
+
+  /* 2nd version of my hamburger menu (animated) */
+  .icon-bar {
+    width: 22px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: block;
+    /* declare the duration for the css animation */
+    transition: all 0.2s;
+    margin-top: 4px;
+  }
+
+  .navbar-toggler {
+    border: none;
+    background: transparent !important;
+  }
+  .navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    /* transform e.g. rotate 45 degrees to which position loll */
+    transform-origin: 10% 10%;
+  }
+
+  .navbar-toggler .middle-bar {
+    opacity: 0;
+  }
+
+  .navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+  }
+
+  .navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+  }
+
+  .navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+  }
+
+  .navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+  }
 }

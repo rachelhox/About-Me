@@ -15,26 +15,51 @@
     />
     <link href="./styles.css" rel="stylesheet" />
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar-scroll" data-offset="50">
     <div class="destop-wrapper">
-      <div class="navbar" id="navbar">
+      <nav class="navbar navbar-expand-lg" id="navbar">
         <div class="container">
-          <img src="public/static/images/assets/about-me.svg" />
-          <nav>
-            <ul>
-              <a href="https://www.linkedin.com/in/rachel-ho-1016/">
-                <li>Resume</li>
-              </a>
-              <a href="https://github.com/rachelhox">
-                <li>Portfolio</li>
-              </a>
-              <a href="./contact.html">
-                <li>Contact</li>
-              </a>
+          <a class="navbar-brand" href="#">
+            <img src="public/static/images/assets/about-me.svg" />
+          </a>
+          <!-- First version of my burger icon where I used a background image for the hambuger icon:  -->
+          <!-- <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="#navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav" id="navbar-scroll">
+              <li class="nav-item">
+                <a href="#first-section">Resume</a>
+              </li>
+
+              <li class="nav-item"><a href="#second-section">Portfolio</a></li>
+
+              <li class="nav-item"><a href="#third-section">Contact</a></li>
             </ul>
-          </nav>
+          </div>
         </div>
-      </div>
+      </nav>
 
       <div class="hero-section">
         <div class="container">
@@ -47,7 +72,7 @@
         </div>
       </div>
       <div class="container">
-        <div class="first-section">
+        <div class="first-section" id="first-section">
           <div class="first-left-section">
             <h1>Before Bootcamp</h1>
             <p>
@@ -76,7 +101,7 @@
       </div>
 
       <div class="container">
-        <div class="second-section">
+        <div class="second-section" id="second-section">
           <div class="second-section-header">
             <h2>Some of my personal projects before the bootcamp...</h2>
           </div>
@@ -90,9 +115,7 @@
                 </div>
                 <div class="col">
                   <div class="card-body" id="card-body2">
-                    <h5>
-                      Automatic Speech Recognition System
-                    </h5>
+                    <h5>Automatic Speech Recognition System</h5>
                     <h6 class="card-subtitle">
                       <img
                         src="./public/static/images/icons/Python-logo.svg"
@@ -116,17 +139,13 @@
               <div class="row" id="row2">
                 <div class="col">
                   <div class="card-body">
-                    <h5>
-                      Pong
-                    </h5>
+                    <h5>Pong</h5>
                     <h6 class="card-subtitle">
                       <img
                         src="./public/static/images/icons/javascript.svg"
                       />Javascript
                     </h6>
-                    <p class="card-text">
-                      Retro Pong Game: play against AI
-                    </p>
+                    <p class="card-text">Retro Pong Game: play against AI</p>
                     <a
                       href="https://github.com/rachelhox/Pong"
                       class="btn btn-dark"
@@ -146,7 +165,7 @@
       </div>
 
       <div class="container">
-        <div class="third-section">
+        <div class="third-section" id="third-section">
           <div class="third-section-header">
             <h2>Some photos of me having fun..</h2>
           </div>
@@ -186,9 +205,7 @@
                   </div>
                   <div class="carousel-caption d-none d-md-block">
                     <h5>Thanksgiving Morning</h5>
-                    <p>
-                      chilling with my lovely dog
-                    </p>
+                    <p>chilling with my lovely dog</p>
                   </div>
                 </div>
                 <div class="carousel-item">
@@ -204,9 +221,7 @@
                   </div>
                   <div class="carousel-caption d-none d-md-block" id="caption2">
                     <h5>Photo Booth</h5>
-                    <p>
-                      90's themed dance party
-                    </p>
+                    <p>90's themed dance party</p>
                   </div>
                 </div>
                 <div class="carousel-item">
@@ -222,9 +237,7 @@
                   </div>
                   <div class="carousel-caption d-none d-md-block" id="caption3">
                     <h5>Christmas Tree Shopping</h5>
-                    <p>
-                      preparing for Christmas
-                    </p>
+                    <p>preparing for Christmas</p>
                   </div>
                 </div>
               </div>
