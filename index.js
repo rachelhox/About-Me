@@ -28,6 +28,23 @@ $(document).ready(function () {
     });
   });
 
+  $(function () {
+    var navMain = $("#navbarNav");
+    navMain.on("click", "a", null, function () {
+      navMain.collapse("hide");
+    });
+  });
+
+  // how to hide all the nav-items after toggled
+  // $(function () {
+  //   $("#sidebarCollapse,.sidebar-header,#side1,#side2,#side3,#side4").on(
+  //     "click",
+  //     function () {
+  //       $("#sidebar, #content").toggleClass("active");
+  //     }
+  //   );
+  // });
+
   //Sticky Navbar
   // When the user scrolls the page, execute myFunction
   window.onscroll = function () {
