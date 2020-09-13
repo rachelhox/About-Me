@@ -196,6 +196,11 @@ li {
   height: 4rem;
 }
 
+.mobileNavBg {
+  background-color: #490d40;
+  height: 4rem;
+}
+
 .second-section {
   min-height: 25rem;
   height: 55rem;
