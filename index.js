@@ -35,6 +35,13 @@ $(document).ready(function () {
     });
   });
 
+  $(() => {
+    let burgerIcon = $(".navbar-toggler");
+    burgerIcon.on("click", () => {
+      $(".navbar").toggleClass("mobileNavBg");
+    });
+  });
+
   // how to hide all the nav-items after toggled
   // $(function () {
   //   $("#sidebarCollapse,.sidebar-header,#side1,#side2,#side3,#side4").on(
